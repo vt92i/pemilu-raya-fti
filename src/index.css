@@ -1,3 +1,490 @@
 body{
-    margin:0;
+    margin: 0;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.head{
+    height: 100vh;
+    width: 100%;
+}
+.Organ{
+    height: 105vh;
+    width: 100%;
+    background-color: #477167;
+    position: relative;
+}
+.feds{
+    height: 100vh;
+    width: 100%;
+    background-color: #477167;
+    position: relative;
+}
+.foot{
+    height: 50vh;
+    width: 100%;
+    padding: 5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: #477167;
+}
+.Images{
+    background-image: url(w.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.Nav{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh;
+    align-items: center;
+}
+.left{
+    margin-left: 0;
+}
+.right{
+    margin-right: 2vh;
+}
+.menu{
+    list-style-type: none;
+    flex: left;
+    display: flex;
+    align-items: center;
+}
+ul.menu>li{
+    margin-left: 50px;
+    font-size: 1.5rem;
+    color: white !important;
+    text-decoration: none !important;
+}
+.overlayhead{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(0deg, rgba(71,113,103,1) 0%, rgba(2,0,36,0) 100%);
+
+}
+.butong{
+    font-size: 1.5rem;
+    padding: 0.5rem 3rem;
+    border-radius: 20px;
+    background-color: #994B35;
+    color: white;
+    border: none;
+}
+.logo{
+    width: 5.5rem;
+}
+.tezt{
+    color: white;
+    position: absolute;
+    z-index: 3;
+    top:30%;
+    left: 15%;
+    text-align: center;
+}
+div.tezt>h1{
+    font-size: 8rem;
+    margin-bottom: 5px;
+}
+div.tezt>h3{
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight:normal;
+}
+.organis{
+    list-style-type: none;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    margin-top: 18%;
+    margin-left: 8%;
+}
+.kotak{
+    width: 300px;
+    height: 300px;
+    background-color: #5B8A7F;
+    
+    margin: 0px 40px;
+}
+.ikan{
+    position: absolute;
+    z-index: 3;
+    font-size: 75px;
+    margin-left: 12rem;
+    margin-top:12rem;
+    color:white;
+}
+.logosema{
+    width: 301px;
+    /* height: 100px; */
+}
+.logohmti{
+    width: 232px;
+    /* height: 100px; */
+}
+.logohima{
+    width: 199px;
+    /* height: 100px; */
+}
+.logohimsi{
+    width: 274px;
+    /* height: 100px; */
+}
+ul.organis>li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider{
+    display: flex;
+    position: absolute;
+    margin-top: 20%;
+    right: 0;
+}
+.item{
+    width: 600px;
+    padding: 45px;
+    height: 440px;
+    box-sizing: border-box;
+}
+.title{
+    color: white;
+    margin: 0;
+    font-size: 3.5rem;
+}
+.tgl{
+    font-size: 2rem;
+    color: white;
+    margin: 0 0 30px 0;
+    font-weight: normal;
+}
+.desc{
+    color: white;
+    font-size: 1.1rem;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.logofoot{
+    width: 200px;
+}
+.about{
+    width: 20rem;
+    margin: 0 5rem;
+    color: white;
+}
+div.about>h4{
+    font-size: 2.4rem;
+    margin: 0;
+}
+.sosmed{
+    color: white;
+    width: 20rem;
+    margin: 0 0 2rem 0px;
+}
+div.sosmed>h4{
+    font-size: 2.4rem;
+    margin: 0;
+}
+.contact{
+    color: white;
+    width: 20rem;
+    margin: 0 0 4rem 0;
+}
+div.contact>h4{
+    font-size: 2.4rem;
+    margin: 0;
+}
+.map{
+    width: 20rem;
+}
+.items{
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+h6{
+    margin: 0;
+}
+.first{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #477167;
+}
+.second{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.no1{
+    position: relative;
+    height: 100%;
+    width:33.4%;
+    background-color: #D2BB9C;
+}
+.no2{
+    position: relative;
+    height: 100%;
+    width:33.4%;
+    background-color: #708573;
+}
+.no3{
+    position: relative;
+    height: 100%;
+    width:33.4%;
+    background-color: #AC6C56;
+}
+.nomor{
+    font-size: 20rem;
+    margin-top: 4rem;
+    margin-left: 15rem;
+    position: absolute;
+    z-index: 2;
+    color: white;
+}
+.candit{
+    width: 35rem;
+    position: absolute;
+    z-index: 3;
+    margin-top: 9.2rem;
+}
+.over{
+    position: absolute;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+}
+.top{
+    bottom: 0;
+    margin: 3rem;
+    position: absolute;
+    z-index: 5;
+    color: white;
+}
+.Namacandit{
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.CanditNomor{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 100;
+}
+.shomor{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    font-size: 1rem;
+    border-style: solid;
+    padding: 0.8rem 1rem;
+    margin-top: 10px;
+}
+.third{
+    position: absolute;
+    overflow-y: hidden;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.isi{
+    position: absolute;
+    overflow-y: scroll;
+    width: 66%;
+    right: 0;
+    height: 100%;
+
+}
+.isi::-webkit-scrollbar {
+    display: none;
+}
+
+.visi{
+    margin: 20rem 7rem
+}
+.misi{
+    margin: 20rem 7rem
+}
+.riwayat{
+    margin: 20rem 7rem
+}
+.Showhead{
+    font-size: 7rem;
+}
+.showin{
+    font-size: 1.5rem;
+}
+.fourth{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.textVoter{
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 6rem;
+    line-height: 8rem;
+    margin-left: -2rem;
+    position: absolute;
+    z-index: 2;
+    color: black;
+}
+.top2{
+    top: 9%;
+    left: 27%;
+    margin: 3rem;
+    position: absolute;
+    z-index: 5;
+    color: white;
+    border: solid;
+    padding: 0rem 3rem;
+    border-radius: 10rem;
+}
+.angkavote{
+    font-size: 10rem;
+}
+.fifth{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.sema{
+    position: relative;
+    height: 100%;
+    width:25%;
+    background-color: #D2BB9C;
+}
+.hmti{
+    position: relative;
+    height: 100%;
+    width:25%;
+    background-color: #708573;
+}
+.himsi{
+    position: relative;
+    height: 100%;
+    width:25%;
+    background-color: #AC6C56;
+}
+.himaforka{
+    position: relative;
+    height: 100%;
+    width:25%;
+    background-color: #C37F57;
+}
+.ketu{
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    margin-top: 17.2rem;
+}
+.ketuLemba{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 100;
+}
+.Namaketu{
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.lemba{
+    margin-top: 7rem;
+    margin-left: 0rem;
+    position: absolute;
+    z-index: 2;
+}
+.logos{
+    width: 515px;
+}
+.logohim{
+    width: 260px;
+    margin-top: 95px;
+    margin-left: 8rem;
+}
+.logohm{
+    width: 365px;
+    margin-top: 57px;
+    margin-left: 4rem;
+}
+.logosi{
+    margin-top: 42px;
+    width: 385px;
+    margin-left: 4rem;
+}
+.peraturan{
+    width: 100%;
+    z-index: 4;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    display: none;
+    top: 0;
+}
+.blcok{
+    width: 90%;
+    height: 90%;
+    background-color: #477167;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.headblock{
+    display: flex;
+    align-items: center;
+    padding: 30px 65px;
+    justify-content: space-between;
+}
+.bodyblock{
+    height: 100%;
+    padding: 25px 65px;
+}
+.b{
+    font-size: 6rem;
+    color: white;
+    margin: 0;
+}
+.per{
+    color: white;
+}
+.atur{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.kotak:hover{
+    cursor: pointer;
 }
