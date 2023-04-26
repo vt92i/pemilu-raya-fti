@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Kampanye 1",
+    "date": "22 Januari 2018",
+    "description": "Kampanye"
+  },
+  {
+    "id": 2,
+    "title": "Kampanye 2",
+    "date": "22 Februari 2018",
+    "description": "Kampanye"
+  },
+  {
+    "id": 2,
+    "title": "Kampanye 3",
+    "date": "22 Maret 2018",
+    "description": "Kampanye"
+  }
+]
