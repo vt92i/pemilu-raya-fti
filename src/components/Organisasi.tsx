@@ -4,14 +4,14 @@ import organisasi from "../data/organisasi.json";
 const Organisasi = () => {
   return (
     <>
-      <div className="py-[2rem]">
-        <h1 className="pl-12 text-4xl font-bold ">ORGANISASI</h1>
-        <div className="align-center flex flex-wrap justify-center gap-4">
+      <div className="flex flex-col items-center justify-center gap-8 bg-[#477167] p-4 pt-24">
+        <h1 className="text-4xl font-bold tracking-[0.1em]">ORGANISASI</h1>
+        <div className="flex flex-wrap justify-center gap-8">
           {organisasi.map((item) => {
             return (
               <>
-                <label htmlFor={`my-modal-${item.name}`}>
-                  <div key={item.id} className="card w-96 bg-base-100 shadow-xl">
+                <label key={item.id} htmlFor={`modal-${item.name}`}>
+                  <div className="card w-full bg-base-100 shadow-xl lg:w-96">
                     <div className="card-body">
                       <figure>
                         <img className="w-full" src={item.logo} alt={item.name} />
@@ -24,28 +24,25 @@ const Organisasi = () => {
           })}
         </div>
       </div>
+
       {kandidat.map((item) => {
         return (
           <>
-            <input type="checkbox" id={`my-modal-${item.name}`} className="modal-toggle" />
-            <label htmlFor={`my-modal-${item.name}`} className="modal cursor-pointer">
-              <label className="modal-box relative max-w-full" htmlFor="">
-                <h3 className="text-lg font-bold">{item.name}</h3>
-                <div className="align-center flex w-full flex-col justify-center gap-4 overflow-auto lg:flex-row">
+            <input type="checkbox" id={`modal-${item.name}`} className="modal-toggle" />
+            <label htmlFor={`modal-${item.name}`} className="modal cursor-pointer">
+              <div className="modal-box max-w-full">
+                <h3 className="pb-4 text-center text-lg font-bold tracking-[0.1em]">{item.name}</h3>
+                <div className="flex flex-col justify-center gap-4 overflow-auto lg:flex-row">
                   {item.kandidat.map((k) => {
                     return (
-                      <div className="card w-full bg-base-100 shadow-xl">
-                        <figure>
-                          <div className="avatar">
-                            <div className="w-2/4 rounded-full">
-                              <img src={k.foto} />
-                            </div>
-                          </div>
-                        </figure>
+                      <div className="card flex w-full flex-col items-center justify-center bg-base-300 py-8 shadow-xl">
+                        <div className="flex h-64 w-64 items-center justify-center rounded-full bg-fuchsia-400">
+                          <img src={k.foto} alt={k.name} />
+                        </div>
                         <div className="card-body">
-                          <p>Kandidat No. {k.id}</p>
+                          <p>Kandidat {k.id}</p>
                           <h2 className="card-title">{k.name}</h2>
-                          <label htmlFor={`a-${k.name}-${k.id}`}>
+                          <label htmlFor={`kandidat-${k.name}-${k.id}`}>
                             <div className="card-actions justify-start">Lebih lanjut</div>
                           </label>
                         </div>
@@ -53,29 +50,44 @@ const Organisasi = () => {
                     );
                   })}
                 </div>
-              </label>
+              </div>
             </label>
           </>
         );
       })}
-      {kandidat.map((item) =>
-        item.kandidat.map((k) => (
+
+      {kandidat.map((K) =>
+        K.kandidat.map((k) => (
           <>
-            <input type="checkbox" id={`a-${k.name}-${k.id}`} className="modal-toggle" />
-            <label htmlFor={`a-${k.name}-${k.id}`} className="modal cursor-pointer">
-              <label className="z-60 modal-box relative max-h-full max-w-full" htmlFor="">
-                <div className="card card-side max-h-full max-w-full bg-base-100 shadow-xl">
-                  <figure>
-                    <img src={k.foto} alt="Movie" />
-                  </figure>
+            <input type="checkbox" id={`kandidat-${k.name}-${k.id}`} className="modal-toggle" />
+            <label htmlFor={`kandidat-${k.name}-${k.id}`} className="modal cursor-pointer">
+              <div className="z-60 modal-box max-w-full">
+                <div className="card card-side flex flex-col items-center justify-center gap-4 bg-base-200 p-8 shadow-xl">
+                  <h2 className="card-title">{k.name}</h2>
+                  <div className="flex h-64 w-64 items-center justify-center rounded-full bg-fuchsia-400">
+                    <img src={k.foto} alt={k.name} />
+                  </div>
                   <div className="card-body">
-                    <h2 className="card-title">{k.name}</h2>
+                    <h1 className="text-xl font-bold">VISI</h1>
+                    <ul>
+                      {k.visi.map((v) => {
+                        return <li>{v}</li>;
+                      })}
+                    </ul>
+                    <h1 className="text-xl font-bold">MISI</h1>
+                    <ul>
+                      {k.misi.map((v) => {
+                        return <li>{v}</li>;
+                      })}
+                    </ul>
+                  </div>
+                  <div className="card-body">
                     <div className="card-actions justify-end">
-                      <button className="btn-primary btn">Watch</button>
+                      <button className="btn-primary btn">KILL</button>
                     </div>
                   </div>
                 </div>
-              </label>
+              </div>
             </label>
           </>
         ))

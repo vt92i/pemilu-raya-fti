@@ -3,18 +3,18 @@
     "id": 1,
     "title": "Kampanye 1",
     "date": "22 Januari 2018",
-    "description": "Kampanye"
+    "description": "lorem ipsum dolor sit amet"
   },
   {
     "id": 2,
     "title": "Kampanye 2",
     "date": "22 Februari 2018",
-    "description": "Kampanye"
+    "description": "ipsum dolor sit amet"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Kampanye 3",
     "date": "22 Maret 2018",
-    "description": "Kampanye"
+    "description": "amet lorem ipsum dolor sit"
   }
 ]

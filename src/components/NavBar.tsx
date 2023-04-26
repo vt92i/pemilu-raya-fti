@@ -1,9 +1,11 @@
 const NavBar = () => {
   return (
     <>
-      <div className="navbar relative z-20 hidden h-fit w-full justify-between bg-none px-12 py-4 lg:flex">
-        <img className="w-16" src="/images/pemilra.png"></img>
-        <ul className="menu menu-horizontal">
+      <div className="navbar relative z-20 flex items-center justify-between px-2 lg:px-24">
+        <button className="btn-ghost btn-lg btn h-16 w-16 p-2 lg:h-20 lg:w-20">
+          <img src="/images/pemilra.png"></img>
+        </button>
+        <ul className="menu menu-horizontal hidden gap-12 lg:flex">
           <li>
             <label htmlFor="modal-peraturan">Peraturan</label>
           </li>
@@ -14,46 +16,24 @@ const NavBar = () => {
             <a>Timeline</a>
           </li>
         </ul>
+        <button className="btn-ghost btn-square btn-lg btn lg:hidden">
+          <label htmlFor="modal-navigasi" className="btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="inline-block h-5 w-5 stroke-current"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+              ></path>
+            </svg>
+          </label>
+        </button>
       </div>
-
-      <div className="navbar fixed z-20 bg-transparent lg:hidden">
-        <div className="flex-1">
-          <div className="flex">
-            <a className="btn-ghost btn w-24">
-              <img className="w-full" src="/images/pemilra.png"></img>
-            </a>
-          </div>
-        </div>
-        <div className="flex-none">
-          <button className="btn-ghost btn-square btn">
-            <label htmlFor="modal-navigasi" className="btn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                className="inline-block h-5 w-5 stroke-current"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
-                ></path>
-              </svg>
-            </label>
-          </button>
-        </div>
-      </div>
-      <input type="checkbox" id="modal-peraturan" className="modal-toggle" />
-      <label htmlFor="modal-peraturan" className="modal z-30 cursor-pointer">
-        <label className="modal-box relative" htmlFor="">
-          <h3 className="text-lg font-bold">Congratulations random Internet user!</h3>
-          <p className="py-4">
-            Dua tiga empat lima enam tujuh delapan sembilan sepuluh sebelas dua belas tiga belas
-            empat belas lima belas
-          </p>
-        </label>
-      </label>
 
       <input type="checkbox" id="modal-navigasi" className="modal-toggle" />
       <label htmlFor="modal-navigasi" className="modal z-20 cursor-pointer">
@@ -71,6 +51,21 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
+        </label>
+      </label>
+
+      <input type="checkbox" id="modal-peraturan" className="modal-toggle" />
+      <label htmlFor="modal-peraturan" className="modal z-30 cursor-pointer">
+        <label className="modal-box relative" htmlFor="">
+          <h3 className="text-lg font-bold">Peraturan</h3>
+          <p className="py-4">
+            <ul>
+              <li>P</li>
+              <li>Q</li>
+              <li>R</li>
+              <li>S</li>
+            </ul>
+          </p>
         </label>
       </label>
     </>

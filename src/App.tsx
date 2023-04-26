@@ -9,18 +9,12 @@ import "./index.css";
 const App = () => {
   return (
     <>
-      <nav>
-        <NavBar />
-      </nav>
-      <main>
-        <Hero />
-        <Teaser />
-        <Organisasi />
-        <Timeline />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      <NavBar />
+      <Hero />
+      <Teaser />
+      <Organisasi />
+      <Timeline />
+      <Footer />
     </>
   );
 };
