@@ -1,10 +1,11 @@
 const Teaser = () => {
   return (
     <>
-      <div className="flex h-screen w-screen justify-center p-10 ">
+      <h1 className="py-[2rem] pl-12 text-4xl font-bold">TEASER</h1>
+      <div className="lg: relative flex h-full w-screen justify-center p-12">
         <iframe
-          className="h-3/5 w-4/5 md:h-4/5 md:w-4/5"
-          src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0&autoplay=1"
+          className="h-3/4 lg:h-full"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"
           allow="autoplay"
         ></iframe>
       </div>

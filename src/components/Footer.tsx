@@ -43,7 +43,7 @@ const Footer = () => {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15812.392512673185!2d110.4161291!3d-7.7794195!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59f1fb2f2b45%3A0x20986e2fe9c79cdd!2sUniversitas%20Atma%20Jaya%20Yogyakarta%20-%20Kampus%203%20Gedung%20Bonaventura%20Babarsari!5e0!3m2!1sen!2sid!4v1680610515471!5m2!1sen!2sid"
           loading="lazy"
-          className="iframemap"
+          className="w-full"
         ></iframe>
       </footer>
     </>

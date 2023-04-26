@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "SEMA",
+    "kandidat": [
+      {
+        "id": 1,
+        "name": "Villa",
+        "visi": ["kaya"],
+        "misi": ["mabuk"],
+        "foto": "/images/sula.png"
+      },
+      {
+        "id": 2,
+        "name": "ppp",
+        "visi": ["pp 1"],
+        "misi": ["ppp 2"],
+        "foto": "/images/sula.png"
+      },
+      {
+        "id": 3,
+        "name": "aaaa",
+        "visi": ["pp 1"],
+        "misi": ["ppp 2"],
+        "foto": "/images/sula.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "HIMAFORKA",
+    "kandidat": [
+      {
+        "id": 1,
+        "name": "bbbb",
+        "visi": ["visi 1"],
+        "misi": ["misi 1", "misi 2"],
+        "foto": "/images/sula.png"
+      },
+      {
+        "id": 2,
+        "name": "cccc",
+        "visi": ["pp 1"],
+        "misi": ["ppp 2"],
+        "foto": "/images/sula.png"
+      },
+      {
+        "id": 3,
+        "name": "ddd",
+        "visi": ["pp 1"],
+        "misi": ["ppp 2"],
+        "foto": "/images/sula.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "HMTI",
+    "kandidat": [
+      {
+        "id": 1,
+        "name": "hhh",
+        "visi": ["visi 1"],
+        "misi": ["misi 1", "misi 2"],
+        "foto": "/images/sula.png"
+      },
+      {
+        "id": 2,
+        "name": "bbb",
+        "visi": ["pp 1"],
+        "misi": ["ppp 2"],
+        "foto": "/images/sula.png"
+      },
+      {
+        "id": 3,
+        "name": "jjjj",
+        "visi": ["pp 1"],
+        "misi": ["ppp 2"],
+        "foto": "/images/sula.png"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "HIMSI",
+    "kandidat": [
+      {
+        "id": 1,
+        "name": "iiii",
+        "visi": ["visi 1"],
+        "misi": ["misi 1", "misi 2"],
+        "foto": "/images/sula.png"
+      },
+      {
+        "id": 2,
+        "name": "kkkk",
+        "visi": ["pp 1"],
+        "misi": ["ppp 2"],
+        "foto": "/images/sula.png"
+      },
+      {
+        "id": 3,
+        "name": "llll",
+        "visi": ["pp 1"],
+        "misi": ["ppp 2"],
+        "foto": "/images/sula.png"
+      }
+    ]
+  }
+]

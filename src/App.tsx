@@ -4,16 +4,23 @@ import NavBar from "./components/NavBar";
 import Organisasi from "./components/Organisasi";
 import Teaser from "./components/Teaser";
 import Timeline from "./components/Timeline";
+import "./index.css";
 
 const App = () => {
   return (
     <>
-      <NavBar />
-      <Hero />
-      <Teaser />
-      <Organisasi />
-      <Timeline />
-      <Footer />
+      <nav>
+        <NavBar />
+      </nav>
+      <main>
+        <Hero />
+        <Teaser />
+        <Organisasi />
+        <Timeline />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
