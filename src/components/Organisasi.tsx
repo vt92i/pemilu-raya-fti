@@ -4,7 +4,7 @@ import organisasi from "../data/organisasi.json";
 const Organisasi = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-8 bg-[#477167] p-4 pt-24">
+      <div id="kandidat" className="flex flex-col items-center justify-center gap-8 bg-[#477167] p-4 pt-24">
         <h1 className="text-5xl font-bold tracking-[0.1em]">ORGANISASI</h1>
         <div className="flex flex-wrap justify-center gap-8">
           {organisasi.map((item) => {
@@ -28,7 +28,7 @@ const Organisasi = () => {
       {kandidat.map((item) => {
         return (
           <>
-            <input type="checkbox" id={`modal-${item.name}`} className="modal-toggle" />
+            <input key={`${item.id}_k`} type="checkbox" id={`modal-${item.name}`} className="modal-toggle" />
             <label htmlFor={`modal-${item.name}`} className="modal cursor-pointer">
               <div className="modal-box max-w-full">
                 <h3 className="pb-4 text-center font-bold tracking-[0.1em] text-4xl">
@@ -37,12 +37,14 @@ const Organisasi = () => {
                 <div className="flex flex-col justify-center gap-4 overflow-auto lg:flex-row">
                   {item.kandidat.map((k) => {
                     return (
-                      <div className="card gap-8 flex w-full flex-col items-center justify-center bg-base-300 py-8 shadow-xl">
-                        <div className="flex h-64 w-64 items-center justify-center rounded-full bg-fuchsia-400 text-center">
-                          <img src={k.foto} alt={k.name} />
-                        </div>
+                      <div key={`${k.id}_kandidatkuh`} className="card gap-8 flex w-full flex-col items-center justify-center bg-base-300 py-8 shadow-xl px-4">
+                        <img
+                          className="aspect-square bg-primary p-2 rounded-full w-64 h-64"
+                          src={k.foto}
+                          alt={k.name}
+                        />
                         <div className="text-center flex flex-col gap-2 items-center">
-                          <h2 className="text-center ">Kandidat Nomer Urut {k.id}</h2>
+                          <h2 className="text-center">Kandidat Nomer Urut {k.id}</h2>
                           <h2 className="text-center font-bold text-4xl pb-4">{k.name}</h2>
                           <label
                             htmlFor={`kandidat-${k.name}-${k.id}`}
@@ -64,34 +66,45 @@ const Organisasi = () => {
       {kandidat.map((K) =>
         K.kandidat.map((k) => (
           <>
-            <input type="checkbox" id={`kandidat-${k.name}-${k.id}`} className="modal-toggle" />
-            <label htmlFor={`kandidat-${k.name}-${k.id}`} className="modal cursor-pointer">
+            <input key={k.id} type="checkbox" id={`kandidat-${k.name}-${k.id}`} className="modal-toggle" />
+            <label key={`container_${k.id}`} htmlFor={`kandidat-${k.name}-${k.id}`} className="modal cursor-pointer">
               <div className="z-60 modal-box max-w-full">
                 <div className="card card-side flex flex-col items-center justify-center gap-4 bg-base-200 p-8 shadow-xl">
-                  <h2 className="card-title text-4xl">{k.name}</h2>
-                  <div className="flex h-64 w-64 items-center justify-center rounded-full bg-primary">
-                    <img src={k.foto} alt={k.name} />
-                  </div>
+                  <h2 className="card-title text-4xl text-center">{k.name}</h2>
+                  <img
+                    className="aspect-square bg-primary p-2 rounded-full w-64 h-64"
+                    src={k.foto}
+                    alt={k.name}
+                  />
+                  <h1 className="text-xl font-bold pt-4">PROFILE</h1>
                   <iframe
-                    className="w-1/2 pt-4 aspect-video"
-                    src="https://www.youtube.com/embed/SUXyoyuJZ8Y?autoplay=1&mute=1"
+                    className="w-full lg:w-1/2 aspect-video"
+                    src={`${k.video}?autoplay=0&mute=1`}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen={true}
                     frameBorder={0}
                   ></iframe>
                   <div className="card-body justify-center items-center">
                     <h1 className="text-xl font-bold">VISI</h1>
-                    <ul>
-                      {k.visi.map((v) => {
-                        return <li>{v}</li>;
-                      })}
-                    </ul>
-                    <h1 className="text-xl font-bold">MISI</h1>
-                    <ul>
-                      {k.misi.map((v) => {
-                        return <li>{v}</li>;
-                      })}
-                    </ul>
+                    <div className="w-full max-w-2xl">
+                      <ul>
+                        {k.visi.map((v, index) => {
+                          return (
+                            <li key={`${v}-${index}`} className="list-inside list-disc">
+                              {v}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                    <h1 className="text-xl font-bold pt-12">MISI</h1>
+                    <div className="w-full max-w-2xl">
+                      <ul>
+                        {k.misi.map((v, index) => {
+                          return <li key={`${v}-${index}`} className="list-inside list-disc">{v}</li>;
+                        })}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>

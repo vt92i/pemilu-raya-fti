@@ -1,20 +1,27 @@
 [
   {
     "id": 1,
-    "title": "Kampanye 1",
-    "date": "22 Januari 2018",
-    "description": "lorem ipsum dolor sit amet"
+    "title": "Debat",
+    "date": "6 Mei 2023",
+    "description": "Debat pemilra adalah sebuah acara yang diselenggarakan selama masa kampanye pemilra, di mana kandidat atau perwakilan dari partai politik bertemu dan berdebat tentang isu penting yang relevan dalam pemilu tersebut."
   },
   {
     "id": 2,
-    "title": "Kampanye 2",
-    "date": "22 Februari 2018",
-    "description": "ipsum dolor sit amet"
+    "title": "Masa Tenang",
+    "date": "11 - 14 Mei 2023",
+    "description": "Masa tenang adalah periode waktu sebelum pelaksanaan pemilihan umum di mana semua aktivitas kampanye, termasuk pemasangan iklan, publikasi survei pemilihan, dan kegiatan kampanye lainnya, dihentikan."
   },
   {
     "id": 3,
-    "title": "Kampanye 3",
-    "date": "22 Maret 2018",
-    "description": "amet lorem ipsum dolor sit"
+    "title": "Pemungutan Suara",
+    "date": "15 - 17 Mei 2023",
+    "description": "Pemungutan suara adalah proses di mana warga negara yang memenuhi syarat untuk memilih diberikan hak untuk memberikan suara mereka dalam pemilihan umum."
+  },
+  {
+    "id": 4,
+    "title": "Pengumuman Hasil",
+    "date": "20 Mei 2023",
+    "description": "Pengumuman hasil adalah tahap akhir dari sebuah pemilihan umum di mana hasil akhir dari pemilihan umum diumumkan kepada publik."
   }
+  
 ]

@@ -10,14 +10,29 @@ const NavBar = () => {
             <label htmlFor="modal-peraturan">Peraturan</label>
           </li>
           <li>
-            <a>Kandidat</a>
+            <a
+              onClick={() =>
+                document.getElementById("kandidat")?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Kandidat
+            </a>
           </li>
           <li>
-            <a>Timeline</a>
+            <a
+              onClick={() =>
+                document.getElementById("timeline")?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Timeline
+            </a>
           </li>
         </ul>
         <button className="btn-ghost btn-square btn-lg btn lg:hidden hover:bg-base-100">
-          <label htmlFor="modal-navigasi" className="btn bg-primary border-primary hover:bg-primary hover:border-0">
+          <label
+            htmlFor="modal-navigasi"
+            className="btn bg-primary border-primary hover:bg-primary hover:border-0"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -44,10 +59,22 @@ const NavBar = () => {
                 <label htmlFor="modal-peraturan">Peraturan</label>
               </li>
               <li>
-                <a>Kandidat</a>
+                <a
+                  onClick={() =>
+                    document.getElementById("kandidat")?.scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  Kandidat
+                </a>
               </li>
               <li>
-                <a>Timeline</a>
+                <a
+                  onClick={() =>
+                    document.getElementById("timeline")?.scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  Timeline
+                </a>
               </li>
             </ul>
           </div>
@@ -56,14 +83,42 @@ const NavBar = () => {
 
       <input type="checkbox" id="modal-peraturan" className="modal-toggle" />
       <label htmlFor="modal-peraturan" className="modal z-30 cursor-pointer">
-        <label className="modal-box relative" htmlFor="">
-          <h3 className="text-lg font-bold">Peraturan</h3>
-          <p className="py-4">
-            <ul>
-              <li>P</li>
-              <li>Q</li>
-              <li>R</li>
-              <li>S</li>
+        <label className="modal-box relative max-w-4xl" htmlFor="">
+          <h1 className="text-4xl font-bold">Peraturan</h1>
+          <h2 className="text-lg pt-4 font-bold">Sebelum Acara</h2>
+          <p className="">
+            <ul className="list-inside list-disc">
+              <li>
+                Peserta Pemilra adalah seluruh mahasiswa FTI yang sudah melakukan registrasi dan
+                terdaftar dalam Pemilu Raya FTI 2023/2024
+              </li>
+              <li>Registrasi sebagai peserta Pemilra dapat dilakukan melalui (link) </li>
+              <li>
+                Setelah form menunjukkan (tanda) berarti pendaftaran telah berhasil dilakukan.{" "}
+              </li>
+            </ul>
+          </p>
+          <h2 className="text-lg pt-4 font-bold">Setelah Acara</h2>
+          <p>
+            <ul className="list-inside list-disc">
+              <li>
+                Setiap peserta pemilra wajib melakukan registrasi ulang dengan menuliskan Nama, NPM,
+                dan program studi.
+              </li>
+              <li>
+                Peserta pemilra akan mendapatkan dua buah kartu suara, satu kartu suara untuk
+                memilih ketua lembaga prodi masing-masing dan satu kartu suara untuk memilih ketua
+                senat mahasiswa.{" "}
+              </li>
+              <li>
+                Peserta pemilra membawa kartu suara ke bilik suara kemudian mencoblos kartu suara.
+                Setelah itu, peserta pemilra memasukkan kartu suara ke kotak suara yang sudah
+                disediakan.
+              </li>
+              <li>
+                Peserta pemilra mencelupkan jari ke tinta, kemudian boleh meninggalkan area
+                pemungutan suara.
+              </li>
             </ul>
           </p>
         </label>
