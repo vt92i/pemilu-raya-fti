@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
     <>
-      <div className="navbar relative z-20 flex items-center justify-between px-2 lg:px-24">
+      <div className="navbar relative z-20 flex items-center justify-between px-2 lg:px-32 py-4">
         <button className="btn-ghost btn-lg btn h-16 w-16 p-2 lg:h-20 lg:w-20">
           <img src="/images/pemilra.png"></img>
         </button>
@@ -16,8 +16,8 @@ const NavBar = () => {
             <a>Timeline</a>
           </li>
         </ul>
-        <button className="btn-ghost btn-square btn-lg btn lg:hidden">
-          <label htmlFor="modal-navigasi" className="btn">
+        <button className="btn-ghost btn-square btn-lg btn lg:hidden hover:bg-base-100">
+          <label htmlFor="modal-navigasi" className="btn bg-primary border-primary hover:bg-primary hover:border-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
