@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "SEMA",
+    "logo": "/images/sema.png"
+  },
+  {
+    "id": 2,
+    "name": "HIMAFORKA",
+    "logo": "/images/himaforka.png"
+  },
+  {
+    "id": 3,
+    "name": "HMTI",
+    "logo": "/images/hmti.png"
+  },
+  {
+    "id": 4,
+    "name": "HIMSI",
+    "logo": "/images/himsi.png"
+  }
+]
