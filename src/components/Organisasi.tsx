@@ -50,7 +50,7 @@ const Organisasi = () => {
                         className="card flex w-full flex-col items-center justify-center gap-8 bg-base-300 px-4 py-8 shadow-xl"
                       >
                         <img
-                          className="aspect-square h-64 w-64 rounded-full bg-primary bg-cover bg-center p-2"
+                          className="aspect-square h-64 w-64 rounded-full bg-primary bg-center p-2"
                           src={k.foto}
                           alt={k.name}
                         />
