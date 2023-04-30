@@ -39,7 +39,7 @@ const Organisasi = () => {
                     return (
                       <div key={`${k.id}_kandidatkuh`} className="card gap-8 flex w-full flex-col items-center justify-center bg-base-300 py-8 shadow-xl px-4">
                         <img
-                          className="aspect-square bg-primary p-2 rounded-full w-64 h-64"
+                          className="aspect-square bg-primary p-2 rounded-full w-64 h-64 bg-center bg-cover"
                           src={k.foto}
                           alt={k.name}
                         />
