@@ -14,7 +14,7 @@ const Timeline = () => {
               <div
                 key={item.id}
                 className={`card w-full bg-base-100 shadow-xl lg:w-96 ${
-                  item.id % 2 == 0 ? "bg-accent" : "bg-base-100"
+                  item.id % 2 == 0 ? "bg-[#566b5b]" : "bg-base-100"
                 }`}
               >
                 <div className="card-body">

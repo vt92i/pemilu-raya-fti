@@ -8,7 +8,7 @@ const Teaser = () => {
           <div className="card-body">
             <iframe
               className="w-full aspect-video"
-              src="https://www.youtube.com/embed/bwM66NpfikM?autoplay=1&mute=1"
+              src="https://www.youtube.com/embed/lVbLlVnxlH8?autoplay=1"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen={true}
               frameBorder={0}
