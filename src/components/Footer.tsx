@@ -1,4 +1,4 @@
-import { AiOutlineYoutube,AiOutlineWhatsApp, AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineYoutube, AiOutlineInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
