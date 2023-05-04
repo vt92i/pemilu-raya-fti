@@ -3,7 +3,7 @@ import { AiOutlineYoutube,AiOutlineWhatsApp, AiOutlineInstagram } from "react-ic
 const Footer = () => {
   return (
     <>
-      <footer className="footer bg-primary p-10 text-base-content">
+      <footer className="footer bg-[#3c665c] p-10 text-base-content">
         <div>
           <button className="btn-ghost btn-lg btn h-16 w-16 p-2 lg:h-20 lg:w-20">
             <img src="/images/pemilra.png"></img>
@@ -19,27 +19,33 @@ const Footer = () => {
           <span className="footer-title font-bold opacity-100">Sosial Media</span>
 
           <div className="grid grid-flow-col gap-4">
-            <a href="" className="text-lg">
+            <a
+              href="https://instagram.com/pemilrafti_uajy?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              className="text-lg"
+            >
               <AiOutlineInstagram></AiOutlineInstagram>
             </a>
 
-            <a href="" className="text-lg">
+            <a
+              href="https://www.youtube.com/@pemilurayaftiuajy3274"
+              target="_blank"
+              className="text-lg"
+            >
               <AiOutlineYoutube></AiOutlineYoutube>
             </a>
           </div>
         </div>
         <div>
           <span className="footer-title font-bold opacity-100">Contact Person</span>
-          <a className="link-hover link flex flex-col gap-2">
+          <a
+            className="link-hover link flex flex-col gap-2"
+            href="https://instagram.com/pemilrafti_uajy?igshid=YmMyMTA2M2Y="
+            target="_blank"
+          >
             <div className="flex justify-center items-center gap-2">
-              <AiOutlineWhatsApp></AiOutlineWhatsApp>
-              <span>+62877</span>
-            </div>
-          </a>
-          <a className="link-hover link flex flex-col gap-2">
-            <div className="flex justify-center items-center gap-2">
-              <AiOutlineWhatsApp></AiOutlineWhatsApp>
-              <span>+62877</span>
+              <AiOutlineInstagram className="text-lg"></AiOutlineInstagram>
+              <span>Pemilra FTI UAJY</span>
             </div>
           </a>
         </div>
