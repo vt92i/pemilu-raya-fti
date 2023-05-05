@@ -6,7 +6,7 @@ const Organisasi = () => {
     <>
       <div
         id="kandidat"
-        className="flex flex-col items-center justify-center gap-8 bg-[#477167] p-4 pt-24"
+        className="flex flex-col items-center justify-center gap-8 bg-[#3c665c] p-4 py-24"
       >
         <h1 className="text-5xl font-bold tracking-[0.1em]">ORGANISASI</h1>
         <div className="flex flex-wrap justify-center gap-8">
@@ -50,7 +50,7 @@ const Organisasi = () => {
                         className="card flex w-full flex-col items-center justify-center gap-8 bg-base-300 px-4 py-8 shadow-xl"
                       >
                         <img
-                          className="aspect-square h-64 w-64 rounded-full bg-primary bg-cover bg-center p-2"
+                          className="aspect-square h-64 w-64 rounded-full bg-primary bg-center p-2"
                           src={k.foto}
                           alt={k.name}
                         />
