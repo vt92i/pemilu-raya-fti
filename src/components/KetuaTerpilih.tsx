@@ -22,7 +22,7 @@ const KetuaTerpilih = () => {
     return (
         <div className="bg-[#4ccf24]">
             <div id="kandidat" className="flex flex-col items-center justify-center gap-8 bg-[#3c665c] p-4 pt-24 pb-8">
-                <h1 className="text-5xl font-bold tracking-[0.1em] text-center">HASIL VOTING</h1>
+                <h1 className="text-5xl font-bold tracking-[0.1em] text-center">HASIL PEMUNGUTAN SUARA</h1>
                 <div className="flex flex-wrap justify-center gap-2">
                     {organisasi.map((item) => {
                         if (item.name !== lembaga) {
